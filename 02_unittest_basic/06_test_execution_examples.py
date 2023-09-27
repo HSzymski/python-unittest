@@ -16,7 +16,7 @@ class TestClass1(unittest.TestCase):
 
 class TestClass2(unittest.TestCase):
 
-    # To run tests to the firs FAIL use the following flag: -f
+    # To run tests to the first FAIL use the following flag: -f
     # py -m unittest 06_test_execution_examples -vf
     def test_case_2(self):
         self.assertEqual('3.9'.split('.'), ['33333333', '9999999'])

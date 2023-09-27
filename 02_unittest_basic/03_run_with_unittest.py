@@ -26,6 +26,8 @@ class TestArea(unittest.TestCase):
         self.assertRaises(ValueError, area, -4, 5)
         self.assertRaises(ValueError, area, 4, -5)
 
+        with self.assertRaises(ValueError):
+            area(4, -5)
 # running by executing in terminal following commands:
 # - python -m unittest .\03_run_with_unittest.py
 # - py -m unittest .\03_run_with_unittest.py
